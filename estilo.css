@@ -1,0 +1,314 @@
+@font-face{
+    font-family: 'hunters k-pop';
+    src: url('tipografias/kpop.otf');
+}
+/* Banner de cookies */
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(106, 27, 154, 70%);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+ .fig{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+ }
+ .fig:hover{
+    transform: rotate(360deg);
+    transition: 1s ease-in-out;
+ }
+ .fig:hover{
+    transform: scale(50%);
+    transition: 1s ease-in-out;
+ }
+    .cookie-banner p {
+      margin: 0 0 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+ 
+    .cookie-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+ 
+    .cookie-btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+    }
+ 
+    .accept {
+      background-color: rgb(34, 136, 102);
+      color: white;
+    }
+ 
+    .reject {
+      background-color: #c464ff;
+      color: white;
+    }
+ 
+    /* Ocultar el banner con CSS */
+    #close-cookie:checked ~ .cookie-banner {
+      display: none;
+    }
+ 
+    /* Ocultamos el checkbox */
+    #close-cookie {
+      display: none;
+    }
+body{
+    background-image: url(img/fondo2.jpg);
+    size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    font-family: 'hunters k-pop';
+    color: aquamarine;
+    text-align: center;
+    font-size: 100px;
+    animation: colorAnimacion 3s infinite ease-in-out;
+}
+
+.contenedor{
+    display: inline-block;
+    background-color: rgba(173, 238, 238, 50%);
+    width: 700px;
+    height: 350px;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.formular{
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 50%);
+    text-align: center;
+    color: white;
+    align-items: center;
+    animation: escalarAnim 3s infinite ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.formulard{
+    width: 250px;
+    height: 100;
+    margin: 30px;
+    align-items: center;
+}
+.un{ 
+    background-color:#96f7e4;
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+
+}
+.do{
+    background-color: blueviolet;
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+}
+.tr{
+    background-color: rgb(34, 136, 102);
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    margin-top: 80px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+}
+.cu{
+    color: #dadada;
+    background-color: rgba(106, 27, 154, 70%);
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+}
+.ci{
+    background-color: hsl(151, 58%, 64%);
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+}
+.se{
+    background-color: hsla(262, 46%, 74%, 60%);
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+}
+#caja {
+        width: 150px;
+        height: 150px;
+        background-color: rgb(229, 138, 157);
+        color: rgb(9, 103, 1);
+        text-align: center;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+ 
+    /* Animaciones individuales */
+    .mover {
+        animation: moverAnim 3s infinite ease-in-out;
+    }
+ 
+    .escalar {
+        animation: escalarAnim 3s infinite ease-in-out;
+    }
+ 
+    .rotar {
+        animation: rotarAnim 3s infinite linear;
+    }
+ 
+    .color {
+        animation: colorAnim 3s infinite ease-in-out;
+    }
+ 
+ 
+    /* Keyframes */
+    @keyframes transformfig {
+        0% {
+            transform: scale(1);
+        }
+ 
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes moverAnim {
+        0% {
+            transform: translateX(0);
+        }
+ 
+        50% {
+            transform: translateX(200px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+ 
+    @keyframes formular {
+        0% {
+            transform: scale(1);
+        }
+ 
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+ 
+    @keyframes rotarAnim {
+        0% {
+            transform: rotate(0deg);
+        }
+ 
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+ 
+    @keyframes colorAnim {
+        0% {
+            background-color: rgb(198, 102, 122);
+        }
+ 
+        50% {
+            background-color: rgb(0, 53, 107);
+        }
+        100% {
+            background-color: rgb(198, 102, 122);
+        }
+    }
+
+    @keyframes colorAnimacion {
+        0% {
+            color:#c464ff;
+        }
+        50% {
+            color:#96f7e4;
+        }
+         100% {
+            color:#c464ff;
+        }
+    }
+
+    /*PARALAX*/
+    -- CSS --
+*{
+            margin: 0;
+            padding: 0;
+        }
+            /*Cambiar color*/
+    
+ 
+        .parallax {
+            background-image: url("https://wallpapers.com/images/high/coolest-dragon-zld7yangzeti8ncq.webp?region=0,0,1920,1080&width=100%");
+            height: 600px;
+            width: 100%;
+ 
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+ 
+/*filtros de imagen*/
+
+        .im1{
+            filter: blur(6px);
+        }
+        .im2{
+            filter: brightness(50%);
+        }
+        .im3{
+            filter: contrast(50%);
+        }
+        .im4{
+            filter: grayscale(60%);
+        }
+        .im5{
+            filter: invert(70%);
+        }
